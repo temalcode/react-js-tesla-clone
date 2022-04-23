@@ -89,8 +89,13 @@ const RightMenu = styled.div`
 `
 
 const HamburgerMenu = styled(MenuIcon)`
-    margin: auto;
-    cursor: pointer;
+    display: none !important;
+    
+    @media(max-width: 768px){
+	    display: block !important;
+        margin: auto;
+        cursor: pointer;
+    }
 `
 
 const MobileMenu = styled.div`
